@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 95340733316770424}
   - component: {fileID: 143350241100547368}
   - component: {fileID: 114551384804589004}
-  - component: {fileID: 5687205284505647654}
   m_Layer: 0
   m_Name: Stylized Astronaut 1
   m_TagString: Untagged
@@ -213,24 +212,10 @@ MonoBehaviour:
   turnSpeed: 150
   gravity: 20
   jumpSpeed: 20
-  rotationLeft: {x: 0, y: 0, z: 0, w: 0}
-  rotationRight: {x: 0, y: 0, z: 0, w: 0}
-  rotationForward: {x: 0, y: 0, z: 0, w: 0}
-  rotationBack: {x: 0, y: 0, z: 0, w: 0}
---- !u!136 &5687205284505647654
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147752367711628}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.070647165
-  m_Height: 0.24805203
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.11604128, z: -0.00696218}
+  rotationLeft: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  rotationRight: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  rotationForward: {x: 0, y: 0, z: 0, w: 1}
+  rotationBack: {x: 0, y: 1, z: 0, w: 0}
 --- !u!1 &1158021920011488
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,8 +425,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343963671341682}
-  m_LocalRotation: {x: 0.36152875, y: -0.32593396, z: 0.13657326, w: 0.8627931}
-  m_LocalPosition: {x: 0.56, y: 0.863, z: -0.585}
+  m_LocalRotation: {x: -0.43359667, y: 0.008119999, z: -0.0039042975, w: -0.9010621}
+  m_LocalPosition: {x: 0, y: 0.7, z: -0.45}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 4268597916284530}
@@ -521,7 +506,7 @@ MonoBehaviour:
   lookAt: {fileID: 4626026221698110}
   camTransform: {fileID: 4626026221698110}
   distance: 5
-  easing: 0.05
+  easing: 0.1
 --- !u!1 &1417422431645026
 GameObject:
   m_ObjectHideFlags: 0
