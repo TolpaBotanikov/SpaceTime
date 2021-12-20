@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1806273963505244222}
   - component: {fileID: 2742142498544410872}
   m_Layer: 0
-  m_Name: Medicine
+  m_Name: Medicine270
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2431552795244008124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -57,7 +57,7 @@ Transform:
   - {fileID: 8416314742001209027}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &2742142498544410872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
   joints:
   - {fileID: 2045995511540133802}
   - {fileID: 122839836371194652}
-  directions: 0000000001000000
+  directions: 0200000003000000
 --- !u!1 &6897333770627697478
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496f1cd520647f049b2c09e5b6861156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 0
+  direction: 3
 --- !u!1 &6995219530272669753
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496f1cd520647f049b2c09e5b6861156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 1
+  direction: 2
 --- !u!1 &7388748420407053193
 GameObject:
   m_ObjectHideFlags: 0
