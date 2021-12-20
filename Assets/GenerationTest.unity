@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2113a8d98cb3864cb2dc3c281cc5d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomCount: 5
+  roomCount: 1000
   joints:
   - {fileID: 92324786}
   - {fileID: 92324785}
@@ -308,6 +308,15 @@ MonoBehaviour:
   modules:
   - {fileID: 7537891079146829540, guid: f6ade267d8d7a4e499aea69d2e84cfbc, type: 3}
   - {fileID: 7537891079146829540, guid: 2817c62367c2874458060f3c449ea6ba, type: 3}
+  - {fileID: 1832407440095713639, guid: 95826a0f824987d4ebd0e80cdbf40508, type: 3}
+  - {fileID: 1832407440095713639, guid: b6d064b45dca6574b93abc7d0f09f026, type: 3}
+  - {fileID: 1832407440095713639, guid: c42b9240bd7556744b6a83294fd71f65, type: 3}
+  - {fileID: 1832407440095713639, guid: b0ad01fe95bfafb4fa059232401848fa, type: 3}
+  - {fileID: 8766205761900670527, guid: 7b74d45b03867a34aa4bcfbc7fe00f30, type: 3}
+  - {fileID: 8766205761900670527, guid: c0cfad41f54b75c498aa03fb737a1ec9, type: 3}
+  - {fileID: 8766205761900670527, guid: b7bb8bac0c8bec44b84421f2d47f26d1, type: 3}
+  - {fileID: 8766205761900670527, guid: e4930189e0a0b6f4ba41b64f0f13708e, type: 3}
+  - {fileID: 7977944041470844968, guid: 28315c266aa90bd4b88e6ac450954990, type: 3}
   main: {fileID: 92324783}
 --- !u!1001 &1669218909
 PrefabInstance:
@@ -319,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 4770707577011118041, guid: f6ade267d8d7a4e499aea69d2e84cfbc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4770707577011118041, guid: f6ade267d8d7a4e499aea69d2e84cfbc,
         type: 3}
@@ -556,5 +565,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

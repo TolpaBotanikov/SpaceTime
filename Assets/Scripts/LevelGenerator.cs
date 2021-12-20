@@ -77,6 +77,6 @@ public class LevelGenerator : MonoBehaviour
             case Direction.right:
                 return Direction.left;
         }
-        return Direction.bottom;
+        return Direction.top;
     }
 }
