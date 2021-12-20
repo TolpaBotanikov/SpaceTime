@@ -11,5 +11,6 @@ namespace Assets.Scripts
     {
         public ModuleJoint[] joints;
         public Direction[] directions;
+        
     }
 }

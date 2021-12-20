@@ -52,7 +52,10 @@ public class LevelGenerator : MonoBehaviour
 
         moduleGo.transform.SetParent(main.transform);
 
+        
+
         Vector3 position = joint.transform.position;
+        position.y = main.transform.position.y;
         position.x = joint.transform.position.x - moduleJoint.transform.localPosition.x;
         position.z = joint.transform.position.z - moduleJoint.transform.localPosition.z;
         moduleGo.transform.position = position;

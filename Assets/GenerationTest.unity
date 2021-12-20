@@ -307,11 +307,7 @@ MonoBehaviour:
   - {fileID: 92324784}
   modules:
   - {fileID: 7537891079146829540, guid: f6ade267d8d7a4e499aea69d2e84cfbc, type: 3}
-  - {fileID: 7537891079146829540, guid: 06d56feca507ff84094fe731ba9a67fe, type: 3}
-  - {fileID: 2431552795244008124, guid: 6fffb48902b4cd64899f9c6d24f7ac84, type: 3}
-  - {fileID: 2431552795244008124, guid: 201afa8766eaf7640b424795a7d7e964, type: 3}
-  - {fileID: 321725247670539138, guid: 7861c9e9d2d7b9942ae1d5b9632a6304, type: 3}
-  - {fileID: 321725247670539138, guid: 819e8c541eac2ac48ba87b67a5916fc1, type: 3}
+  - {fileID: 7537891079146829540, guid: 2817c62367c2874458060f3c449ea6ba, type: 3}
   main: {fileID: 92324783}
 --- !u!1001 &1669218909
 PrefabInstance:
