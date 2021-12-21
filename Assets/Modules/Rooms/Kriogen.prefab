@@ -98,6 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6475848160992378942}
   - component: {fileID: 7197205867345840588}
+  - component: {fileID: 704707741165164611}
   m_Layer: 0
   m_Name: Kriogen
   m_TagString: Untagged
@@ -137,6 +138,21 @@ MonoBehaviour:
   - {fileID: 7796607329979744557}
   - {fileID: 3036223993664893815}
   directions: 0100000000000000
+  number: 100
+  joint: {fileID: 0}
+--- !u!65 &704707741165164611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294305902538786248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.78591, y: 3.878725, z: 13.683024}
+  m_Center: {x: 2.0027287, y: 2.0338163, z: 5.113746}
 --- !u!1 &5721393634905853155
 GameObject:
   m_ObjectHideFlags: 0

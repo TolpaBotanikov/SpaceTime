@@ -211,6 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5057896278899698005}
   - component: {fileID: 9218837902694539308}
+  - component: {fileID: 4439215379395856593}
   m_Layer: 0
   m_Name: T-corridor270
   m_TagString: Untagged
@@ -251,6 +252,21 @@ MonoBehaviour:
   - {fileID: 3504867079749375090}
   - {fileID: 1977143959482813674}
   directions: 030000000100000002000000
+  number: 100
+  joint: {fileID: 0}
+--- !u!65 &4439215379395856593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8766205761900670527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.814999, y: 3.7005434, z: 3.8605983}
+  m_Center: {x: -0.16384292, y: 1.934566, z: -0.01848805}
 --- !u!1001 &1489158633711765375
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806273963505244222}
   - component: {fileID: 2742142498544410872}
+  - component: {fileID: 2090238385489354}
   m_Layer: 0
   m_Name: Medicine180
   m_TagString: Untagged
@@ -49,6 +50,21 @@ MonoBehaviour:
   - {fileID: 2045995511540133802}
   - {fileID: 122839836371194652}
   directions: 0000000001000000
+  number: 100
+  joint: {fileID: 0}
+--- !u!65 &2090238385489354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2431552795244008124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.534551, y: 3.928958, z: 7.5392337}
+  m_Center: {x: 1.9527915, y: 2.0242677, z: 1.974951}
 --- !u!1 &3066278976357392957
 GameObject:
   m_ObjectHideFlags: 0

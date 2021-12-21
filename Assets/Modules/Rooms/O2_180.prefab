@@ -239,6 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7244563341060491461}
   - component: {fileID: 3081016402130900057}
+  - component: {fileID: 6180541790812365012}
   m_Layer: 0
   m_Name: O2_180
   m_TagString: Untagged
@@ -279,6 +280,21 @@ MonoBehaviour:
   - {fileID: 1011812366416188638}
   - {fileID: 6244529403613797949}
   directions: 010000000300000002000000
+  number: 100
+  joint: {fileID: 0}
+--- !u!65 &6180541790812365012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7449357367360618686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.740284, y: 3.801979, z: 5.726655}
+  m_Center: {x: 0.11741066, y: 2.03726, z: 0.060301304}
 --- !u!1001 &442523631207449533
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -118,6 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7244563341060491461}
   - component: {fileID: 1105534483833003071}
+  - component: {fileID: 647927324860896056}
   m_Layer: 0
   m_Name: O2_90
   m_TagString: Untagged
@@ -158,6 +159,21 @@ MonoBehaviour:
   - {fileID: 3376160859157050273}
   - {fileID: 6017306804220536696}
   directions: 000000000100000003000000
+  number: 100
+  joint: {fileID: 0}
+--- !u!65 &647927324860896056
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7449357367360618686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.5996904, y: 3.8837714, z: 11.811518}
+  m_Center: {x: 0.081178665, y: 2.000202, z: 0.110860825}
 --- !u!1 &7633320361582959233
 GameObject:
   m_ObjectHideFlags: 0

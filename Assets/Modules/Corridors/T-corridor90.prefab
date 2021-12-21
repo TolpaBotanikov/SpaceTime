@@ -157,6 +157,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 2
+--- !u!65 &567054445223873184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7082276081435490254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.000002, y: 4.0475597, z: 1.1298314}
+  m_Center: {x: 0.00000020582522, y: 2.0237799, z: 0.13670675}
 --- !u!1 &8578918548705160786
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5057896278899698005}
   - component: {fileID: 9218837902694539308}
+  - component: {fileID: 2847121127970428759}
   m_Layer: 0
   m_Name: T-corridor90
   m_TagString: Untagged
@@ -251,6 +265,21 @@ MonoBehaviour:
   - {fileID: 3504867079749375090}
   - {fileID: 1977143959482813674}
   directions: 000000000300000002000000
+  number: 100
+  joint: {fileID: 0}
+--- !u!65 &2847121127970428759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8766205761900670527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.671023, y: 3.7524905, z: 3.8133044}
+  m_Center: {x: -0.94092584, y: 1.987318, z: 1.049792}
 --- !u!1001 &1489158633711765375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,6 +589,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
+--- !u!1 &7082276081435490254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 125588, guid: ea798cfb4939d4441b95d1bd39d0767f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7082276081435467098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7082276081435294906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 451040, guid: ea798cfb4939d4441b95d1bd39d0767f,
