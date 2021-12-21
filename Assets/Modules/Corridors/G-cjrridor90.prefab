@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8990597951429485594}
   - component: {fileID: -8408419441627320080}
+  - component: {fileID: 2129035505863141287}
   m_Layer: 0
   m_Name: G-cjrridor90
   m_TagString: Untagged
@@ -125,6 +126,19 @@ MonoBehaviour:
   - {fileID: 3811185865190619656}
   - {fileID: 618240464456080035}
   directions: 0300000000000000
+--- !u!65 &2129035505863141287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832407440095713639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4493465, y: 4.0450826, z: 3.4470773}
+  m_Center: {x: 0.08117676, y: 2.0326993, z: 1.92}
 --- !u!1 &4067006435934675590
 GameObject:
   m_ObjectHideFlags: 0

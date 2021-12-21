@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66580946660809458, guid: abf0d86ab93a87b45ad544fd101e2f3f,
+        type: 3}
+      propertyPath: number
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 66580946660809458, guid: abf0d86ab93a87b45ad544fd101e2f3f,
         type: 3}
       propertyPath: joints.Array.size
@@ -300,11 +305,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2113a8d98cb3864cb2dc3c281cc5d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomCount: 1000
+  roomCount: 20
+  finished: 0
   joints:
   - {fileID: 92324786}
   - {fileID: 92324785}
   - {fileID: 92324784}
+  colliders: []
   modules:
   - {fileID: 7537891079146829540, guid: f6ade267d8d7a4e499aea69d2e84cfbc, type: 3}
   - {fileID: 7537891079146829540, guid: 2817c62367c2874458060f3c449ea6ba, type: 3}
@@ -312,12 +319,44 @@ MonoBehaviour:
   - {fileID: 1832407440095713639, guid: b6d064b45dca6574b93abc7d0f09f026, type: 3}
   - {fileID: 1832407440095713639, guid: c42b9240bd7556744b6a83294fd71f65, type: 3}
   - {fileID: 1832407440095713639, guid: b0ad01fe95bfafb4fa059232401848fa, type: 3}
-  - {fileID: 8766205761900670527, guid: 7b74d45b03867a34aa4bcfbc7fe00f30, type: 3}
-  - {fileID: 8766205761900670527, guid: c0cfad41f54b75c498aa03fb737a1ec9, type: 3}
-  - {fileID: 8766205761900670527, guid: b7bb8bac0c8bec44b84421f2d47f26d1, type: 3}
-  - {fileID: 8766205761900670527, guid: e4930189e0a0b6f4ba41b64f0f13708e, type: 3}
-  - {fileID: 7977944041470844968, guid: 28315c266aa90bd4b88e6ac450954990, type: 3}
   main: {fileID: 92324783}
+  IntersectionIgnorable:
+  - {fileID: 2095487549}
+  - {fileID: 1422500986}
+  - {fileID: 1108385520}
+  - {fileID: 1121434017}
+  - {fileID: 92324783}
+--- !u!65 &92324788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92324783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29.03926, y: 4.126562, z: 15.19657}
+  m_Center: {x: 10.847225, y: 2.0538368, z: 0.029547215}
+--- !u!1 &1108385520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7995763814854405794, guid: abf0d86ab93a87b45ad544fd101e2f3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 92324779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1121434017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 520303499403709090, guid: abf0d86ab93a87b45ad544fd101e2f3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 92324779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1422500986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220189313660704283, guid: abf0d86ab93a87b45ad544fd101e2f3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 92324779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1669218909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -567,3 +606,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2095487549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1567224191983526312, guid: abf0d86ab93a87b45ad544fd101e2f3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 92324779}
+  m_PrefabAsset: {fileID: 0}

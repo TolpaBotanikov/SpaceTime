@@ -7,35 +7,38 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public int roomCount;
+    public bool finished = false;
     [Header("Не трогайте это!!!")]
     public List<ModuleJoint> joints = new List<ModuleJoint>();
+    public List<Collider> colliders = new List<Collider>();
     public GameObject[] modules;
     public GameObject main;
+    public GameObject[] IntersectionIgnorable;
+    public static LevelGenerator S;
+
+    private void Awake()
+    {
+        S = this;
+        colliders.Add(GetComponent<Collider>());
+    }
     private void Update()
     {
-        //foreach(GameObject joint in joints)
-        //{
-        //    GameObject corridorGo = Instantiate(modules[Random.Range(0, modules.Length)]);
-
-        //    Corridor corridor = corridorGo.GetComponent<Corridor>();
-
-        //    GameObject corridorJoint = corridor.joints[Random.Range(0, corridor.joints.Length)].gameObject;
-        //    corridorJoint = corridor.joints[0].gameObject;
-            
-        //    corridorGo.transform.SetParent(main.transform);
-
-        //    Vector3 position = joint.transform.position;
-        //    position.x = joint.transform.position.x - corridorJoint.transform.localPosition.x;
-        //    position.z = joint.transform.position.z - corridorJoint.transform.localPosition.z;
-        //    corridorGo.transform.position = position;
-
-        //    //corridor.transform.position =
-        //}
+        //StartCoroutine(GenerateLevel());
         if (roomCount > 0)
+        {
+            JoinModule();
+        }
+        if (roomCount == 0) finished = true;
+    }
+
+    IEnumerator GenerateLevel()
+    {
+        while(roomCount > 0)
         {
             JoinModule();
             roomCount--;
         }
+        yield return new WaitForSeconds(1);
     }
 
     void JoinModule()
@@ -45,14 +48,21 @@ public class LevelGenerator : MonoBehaviour
         List<GameObject> avaliableModules = modules.Where(
             m => m.GetComponent<Joinable>().directions.
             Contains(jointDirection)).ToList();
-        GameObject moduleGo = Instantiate(avaliableModules[Random.Range(0, avaliableModules.Count)]);
+        GameObject moduleGo = Instantiate(avaliableModules[Random.Range(0, avaliableModules.Count)], new Vector3(100, 100, 100), Quaternion.Euler(0,0,0));
+        moduleGo.name += roomCount;
         Joinable module = moduleGo.GetComponent<Joinable>();
+        module.joint = joint;
+        module.number = roomCount;
 
         ModuleJoint moduleJoint = module.joints.FirstOrDefault(j => j.direction == OppositeDirection(jointDirection));
 
-        moduleGo.transform.SetParent(main.transform);
+        BoxCollider collider = moduleGo.GetComponent<BoxCollider>();
 
-        
+        if (joint == null)
+        {
+            Destroy(moduleGo);
+            return;
+        }
 
         Vector3 position = joint.transform.position;
         position.y = main.transform.position.y;
@@ -60,8 +70,26 @@ public class LevelGenerator : MonoBehaviour
         position.z = joint.transform.position.z - moduleJoint.transform.localPosition.z;
         moduleGo.transform.position = position;
 
+        //Collider[] colls = Physics.OverlapBox(collider.center, collider.bounds.extents / 2).Where(c => c.gameObject.GetComponent<Joinable>() != null).ToArray();
+        //if (colls.Length > 1)
+        foreach (Collider coll in colliders)
+        if (collider.bounds.Intersects(coll.bounds))
+        {
+            print("Intersection!!! In " + moduleGo + " " + roomCount + " with " + coll/*s[0]*/);
+        }
+
+
+        colliders.Add(collider);
         joints.Remove(joint);
         joints.AddRange(module.joints.Where(j => j.direction != OppositeDirection(jointDirection)));
+        roomCount--;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Collider collider = GetComponent<Collider>();
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawCube(collider.bounds.center, collider.bounds.size);
     }
 
     Direction OppositeDirection(Direction direction)
