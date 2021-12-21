@@ -319,6 +319,11 @@ MonoBehaviour:
   - {fileID: 1832407440095713639, guid: b6d064b45dca6574b93abc7d0f09f026, type: 3}
   - {fileID: 1832407440095713639, guid: c42b9240bd7556744b6a83294fd71f65, type: 3}
   - {fileID: 1832407440095713639, guid: b0ad01fe95bfafb4fa059232401848fa, type: 3}
+  - {fileID: 8766205761900670527, guid: 7b74d45b03867a34aa4bcfbc7fe00f30, type: 3}
+  - {fileID: 8766205761900670527, guid: c0cfad41f54b75c498aa03fb737a1ec9, type: 3}
+  - {fileID: 8766205761900670527, guid: b7bb8bac0c8bec44b84421f2d47f26d1, type: 3}
+  - {fileID: 8766205761900670527, guid: e4930189e0a0b6f4ba41b64f0f13708e, type: 3}
+  - {fileID: 7977944041470844968, guid: 28315c266aa90bd4b88e6ac450954990, type: 3}
   main: {fileID: 92324783}
   IntersectionIgnorable:
   - {fileID: 2095487549}
@@ -337,8 +342,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 29.03926, y: 4.126562, z: 15.19657}
-  m_Center: {x: 10.847225, y: 2.0538368, z: 0.029547215}
+  m_Size: {x: 30.106993, y: 4.126562, z: 15.19657}
+  m_Center: {x: 10.313359, y: 2.0538368, z: 0.029547215}
 --- !u!1 &1108385520 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7995763814854405794, guid: abf0d86ab93a87b45ad544fd101e2f3f,
