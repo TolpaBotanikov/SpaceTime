@@ -29,8 +29,8 @@ namespace Assets.Scripts
 
         private void Update()
         {
-            
             if (LevelGenerator.S.IntersectionIgnorable.Contains(gameObject)) return;
+            if (joint == null) print("NOT JOINED!!!" + "In " + name);
             Collider collider = GetComponent<Collider>();
             foreach (Collider coll in LevelGenerator.S.colliders)
                 if (coll.bounds.Intersects(collider.bounds))

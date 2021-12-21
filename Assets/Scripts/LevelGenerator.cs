@@ -20,29 +20,38 @@ public class LevelGenerator : MonoBehaviour
     {
         S = this;
         colliders.Add(GetComponent<Collider>());
+        StartCoroutine(GenerateLevel());
+        StartCoroutine(ConstructMosules());
     }
     private void Update()
     {
         //StartCoroutine(GenerateLevel());
-        if (roomCount > 0)
-        {
-            JoinModule();
-        }
-        if (roomCount == 0) finished = true;
+        //if (roomCount > 0)
+        //{
+        //    JoinModule();
+        //}
+        //if (roomCount == 0) finished = true;
     }
 
     IEnumerator GenerateLevel()
     {
-        while(roomCount > 0)
+        yield return new WaitForSeconds(60);
+        finished = true;
+    }
+
+    IEnumerator ConstructMosules()
+    {
+        while (roomCount > 0)
         {
             JoinModule();
-            roomCount--;
+            yield return new WaitForEndOfFrame();
         }
-        yield return new WaitForSeconds(1);
+        if (roomCount == 0) finished = true;
     }
 
     void JoinModule()
     {
+        if (finished) return;
         ModuleJoint joint = joints[Random.Range(0, joints.Count)];
         Direction jointDirection = joint.direction;
         List<GameObject> avaliableModules = modules.Where(
