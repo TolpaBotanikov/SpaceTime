@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    Animator anim;
-    bool closed = true;
+    private Animator anim;
+    public bool closed = true;
     
     void Start()
     {
