@@ -162,6 +162,8 @@ MonoBehaviour:
   - {fileID: 3811185865190619656}
   - {fileID: 618240464456080035}
   directions: 0100000002000000
+  number: 100
+  joint: {fileID: 0}
 --- !u!65 &5935891951928556398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -173,8 +175,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4493465, y: 4.0450826, z: 3.4470773}
-  m_Center: {x: 1.76, y: 2.0326993, z: 0.25}
+  m_Size: {x: 4.1154943, y: 4.0450826, z: 4.036432}
+  m_Center: {x: 2.0930736, y: 2.0326993, z: -0.044677258}
 --- !u!1 &5350640582446750785
 GameObject:
   m_ObjectHideFlags: 0
