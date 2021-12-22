@@ -89,6 +89,7 @@ public class LevelGenerator : MonoBehaviour
 
 
         joint.door.closed = false;
+        moduleJoint.door.closed = false;
         colliders.Add(collider);
         joints.Remove(joint);
         joints.AddRange(module.joints.Where(j => j.direction != OppositeDirection(jointDirection)));
