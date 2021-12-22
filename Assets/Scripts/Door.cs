@@ -5,6 +5,8 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     Animator anim;
+    bool closed = true;
+    
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -12,7 +14,8 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        anim.SetBool("character_nearby", true);
+        if (!closed)
+            anim.SetBool("character_nearby", true);
     }
 
     private void OnTriggerExit(Collider other)

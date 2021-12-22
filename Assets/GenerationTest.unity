@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2113a8d98cb3864cb2dc3c281cc5d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomCount: 20
+  roomCount: 100
   finished: 0
   joints:
   - {fileID: 92324786}
