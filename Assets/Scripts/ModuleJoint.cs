@@ -6,4 +6,5 @@ using UnityEngine;
 public class ModuleJoint : MonoBehaviour
 {
     public Direction direction;
+    public Door door; 
 }
