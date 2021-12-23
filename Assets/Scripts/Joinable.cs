@@ -11,8 +11,9 @@ namespace Assets.Scripts
     {
         public ModuleJoint[] joints;
         public Direction[] directions;
-        private int intersectionCount = 0;
         public int number = 100;
+        public bool unique;
+        public PrefabExamples variants;
         public ModuleJoint joint;
 
         private void OnDrawGizmos()
@@ -31,6 +32,11 @@ namespace Assets.Scripts
         {
             if (LevelGenerator.S.IntersectionIgnorable.Contains(gameObject)) return;
             if (joint == null) print("NOT JOINED!!!" + "In " + name);
+            if (transform.position.x < 0)
+            {
+                RemoveModule();
+                return;
+            }
             Collider collider = GetComponent<Collider>();
             foreach (Collider coll in LevelGenerator.S.colliders)
                 if (coll.bounds.Intersects(collider.bounds))
@@ -41,21 +47,14 @@ namespace Assets.Scripts
                         {
                             if (number < coll.gameObject.GetComponent<Joinable>().number)
                             {
-                                foreach (ModuleJoint joint in joints)
-                                {
-                                    LevelGenerator.S.joints.Remove(joint);
-                                }
-                                LevelGenerator.S.joints.Add(joint);
-                                LevelGenerator.S.colliders.Remove(GetComponent<BoxCollider>());
-                                LevelGenerator.S.roomCount++;
                                 print("Intersection!!! In " + this + " with " + coll/*s[0]*/);
-                                Destroy(this.gameObject);
+                                RemoveModule();
                                 break;
                             }
                         }
-                        catch
+                        catch (Exception ex)
                         {
-                            print("exception!!!");
+                            print("Exception!!!");
                         }
                     }
                     else
@@ -63,6 +62,21 @@ namespace Assets.Scripts
                         print("Self intersection");
                     }
                 }
+        }
+
+        void RemoveModule()
+        {
+            foreach (ModuleJoint joint in joints)
+            {
+                LevelGenerator.S.joints.Remove(joint);
+            }
+            LevelGenerator.S.joints.Add(joint);
+            LevelGenerator.S.colliders.Remove(GetComponent<BoxCollider>());
+            LevelGenerator.S.generatedModules.Remove(this.gameObject);
+            LevelGenerator.S.roomCount++;
+            if (variants != null)
+                LevelGenerator.S.modules.AddRange(variants.examples);
+            Destroy(this.gameObject);
         }
     }
 }

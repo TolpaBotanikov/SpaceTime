@@ -164,6 +164,9 @@ MonoBehaviour:
   - {fileID: 6017306804220536696}
   directions: 000000000100000003000000
   number: 100
+  unique: 1
+  variants: {fileID: 4238157628190179646, guid: c9a576c8c0af9124f934d960828667a0,
+    type: 3}
   joint: {fileID: 0}
 --- !u!65 &647927324860896056
 BoxCollider:

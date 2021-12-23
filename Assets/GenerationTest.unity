@@ -308,13 +308,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2113a8d98cb3864cb2dc3c281cc5d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomCount: 100
+  roomCount: 5
   finished: 0
+  requiredModules:
+  - Kriogen
+  - Medicine
+  - O2
+  - Reactor
   joints:
   - {fileID: 92324786}
   - {fileID: 92324785}
   - {fileID: 92324784}
   colliders: []
+  generatedModules: []
   modules:
   - {fileID: 7537891079146829540, guid: f6ade267d8d7a4e499aea69d2e84cfbc, type: 3}
   - {fileID: 7537891079146829540, guid: 2817c62367c2874458060f3c449ea6ba, type: 3}

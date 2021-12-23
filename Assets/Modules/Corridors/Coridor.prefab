@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 1
+  door: {fileID: 0}
 --- !u!1 &4674505089664447970
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
+  door: {fileID: 0}
 --- !u!1 &5302458402568250169
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +178,8 @@ MonoBehaviour:
   - {fileID: 2361333570679601188}
   directions: 0000000001000000
   number: 100
+  unique: 0
+  siblings: []
   joint: {fileID: 0}
 --- !u!65 &4201426970667982807
 BoxCollider:

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3609559002563712265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8641041655284034256}
+  - component: {fileID: 9169566311617147590}
+  m_Layer: 0
+  m_Name: KriogenPrefabs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8641041655284034256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609559002563712265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.635733, y: 1.7626722, z: 5.014591}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9169566311617147590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609559002563712265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72f5c4823c435f49a0d3174bd22ea80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  examples:
+  - {fileID: 5294305902538786248, guid: e58f995bf59af5f4a8e20671221c8bb0, type: 3}
+  - {fileID: 5294305902538786248, guid: 959b1dba2c52701459a344c7bf009861, type: 3}
+  - {fileID: 5294305902538786248, guid: 9df93422693541d41b36817f92eed50e, type: 3}
+  - {fileID: 5294305902538786248, guid: 80829915eb5bd4c449cea33d51aa5401, type: 3}
