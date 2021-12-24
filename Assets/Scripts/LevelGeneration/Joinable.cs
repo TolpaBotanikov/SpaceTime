@@ -23,11 +23,6 @@ namespace Assets.Scripts
             Gizmos.DrawCube(coll.bounds.center, coll.bounds.size);
         }
 
-        private void Start()
-        {
-
-        }
-
         private void Update()
         {
             if (LevelGenerator.S.IntersectionIgnorable.Contains(gameObject)) return;
@@ -66,6 +61,7 @@ namespace Assets.Scripts
 
         void RemoveModule()
         {
+            joint.door.closed = true;
             foreach (ModuleJoint joint in joints)
             {
                 LevelGenerator.S.joints.Remove(joint);

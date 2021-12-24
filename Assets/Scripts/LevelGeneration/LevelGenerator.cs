@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class LevelGenerator : MonoBehaviour
 {
     public int roomCount;
-    public bool finished = false;
     [Header("Не трогайте это!!!")]
+    public bool finished = false;
     public List<string> requiredModules = new List<string>();
     public List<ModuleJoint> joints = new List<ModuleJoint>();
     public List<Collider> colliders = new List<Collider>();
@@ -36,13 +36,13 @@ public class LevelGenerator : MonoBehaviour
         //if (roomCount == 0) finished = true;
     }
 
-    IEnumerator GenerateLevel()
+    private IEnumerator GenerateLevel()
     {
         yield return new WaitForSeconds(30);
         finished = true;
     }
 
-    IEnumerator ConstructMosules()
+    private IEnumerator ConstructMosules()
     {
         while (roomCount > 0 && !finished)
         {
@@ -57,6 +57,11 @@ public class LevelGenerator : MonoBehaviour
                 if (generatedModules.Where(m => m.name.Contains(module)).Count() == 0)
                 {
                     SceneManager.LoadScene("GenerationTest");
+                }
+                else
+                {
+                    // Удалить
+                    Game.S.StartGame();
                 }
             }
         }
@@ -93,8 +98,8 @@ public class LevelGenerator : MonoBehaviour
         position.z = joint.transform.position.z - moduleJoint.transform.localPosition.z;
         moduleGo.transform.position = position;
 
-        //joint.door.closed = false;
-        //moduleJoint.door.closed = false;
+        joint.door.closed = false;
+        moduleJoint.door.closed = false;
         colliders.Add(collider);
         joints.Remove(joint);
         joints.AddRange(module.joints.Where(j => j.direction != OppositeDirection(jointDirection)));
