@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   games:
+  - {fileID: 4697357831190436439, guid: 472b788181d39f248a1ee2871f88744c, type: 3}
   - {fileID: 724730923502462466, guid: de925995aecff904494a0f725f5898c4, type: 3}
   - {fileID: 8671549608055983961, guid: cc2fb1f9e43c95744b920aa6af273a9e, type: 3}
   isMinigameEnabled: 0

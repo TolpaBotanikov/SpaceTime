@@ -52,18 +52,18 @@ public class LevelGenerator : MonoBehaviour
         if (roomCount == 0)
         {
             finished = true;
+            bool regeneration = false;
             foreach(string module in requiredModules)
             {
                 if (generatedModules.Where(m => m.name.Contains(module)).Count() == 0)
                 {
+                    regeneration = true;
                     SceneManager.LoadScene("GenerationTest");
                 }
-                else
-                {
-                    // Удалить
-                    Game.S.StartGame();
-                }
             }
+            // Удалить
+            if (!regeneration)
+                Game.S.StartGame();
         }
     }
 
