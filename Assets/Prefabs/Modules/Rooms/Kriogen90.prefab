@@ -234,6 +234,19 @@ Transform:
   m_Father: {fileID: 6475848160992378942}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!135 &5632178651996276111
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6476308873790421193}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.8009489
+  m_Center: {x: -0.0000006840729, y: 0.924999, z: 0.86920977}
 --- !u!1 &7545597691402730088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,12 +1409,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
---- !u!4 &1648556487292179225 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 451040, guid: ea798cfb4939d4441b95d1bd39d0767f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1648556487291810553}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2528083114566978273 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3888109883662022680, guid: ea798cfb4939d4441b95d1bd39d0767f,
@@ -1414,6 +1421,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da6065c89573df498960b3b4bd53bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1648556487292179225 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 451040, guid: ea798cfb4939d4441b95d1bd39d0767f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1648556487291810553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1856927932254730444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3286,6 +3299,12 @@ PrefabInstance:
 --- !u!4 &6480047537385929219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012622640994, guid: d49d5f9ac8c6b7749a634985e6e7e096,
+    type: 3}
+  m_PrefabInstance: {fileID: 6477290183437864289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6476308873790421193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010641356200, guid: d49d5f9ac8c6b7749a634985e6e7e096,
     type: 3}
   m_PrefabInstance: {fileID: 6477290183437864289}
   m_PrefabAsset: {fileID: 0}
