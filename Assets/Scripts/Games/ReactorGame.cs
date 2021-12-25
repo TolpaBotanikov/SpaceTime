@@ -18,7 +18,14 @@ public class ReactorGame : MiniGame
     {
         for (int i = 0; i < 5; i++)
         {
-            code.Add(Random.Range(0, 9));
+            int r = -1;
+            if (i != 0)
+                do
+                {
+                    r = Random.Range(0, 9);
+                } while (r == code[code.Count - 1]);
+            else r = Random.Range(0, 9);
+            code.Add(r);
         }
         StartCoroutine(ShowCode());
     }
