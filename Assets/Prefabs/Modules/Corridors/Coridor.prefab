@@ -178,6 +178,8 @@ MonoBehaviour:
   - {fileID: 2361333570679601188}
   directions: 0000000001000000
   number: 100
+  unique: 0
+  variants: {fileID: 0}
   joint: {fileID: 0}
 --- !u!65 &4201426970667982807
 BoxCollider:

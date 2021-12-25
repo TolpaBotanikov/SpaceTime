@@ -17,19 +17,17 @@ public class Player : MonoBehaviour {
 		}
 
 		void Update (){
-			if (Input.GetKey ("w")) {
+			if (Input.GetAxis("Vertical") != 0) {
 				anim.SetInteger ("AnimationPar", 1);
 			}  else {
 				anim.SetInteger ("AnimationPar", 0);
 			}
 
-			if(controller.isGrounded){
-				moveDirection = transform.forward * Input.GetAxis("Vertical") * speed;
-			}
+			moveDirection = transform.forward * Input.GetAxis("Vertical") * speed;
 
 			float turn = Input.GetAxis("Horizontal");
 			transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
 			controller.Move(moveDirection * Time.deltaTime);
-			moveDirection.y -= gravity * Time.deltaTime;
+			//moveDirection.y -= gravity * Time.deltaTime;
 		}
 }
