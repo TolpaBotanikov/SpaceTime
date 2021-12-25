@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
 
 public class GameTriger : MonoBehaviour
 {
+    public bool broken;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag != "Player") return;

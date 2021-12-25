@@ -414,6 +414,9 @@ MonoBehaviour:
   isMinigameEnabled: 0
   canvas: {fileID: 437507568}
   fixBtn: {fileID: 1669779985}
+  gamePoints: []
+  breakdownCnt: 5
+  breakingDelay: 30
 --- !u!1001 &153602668
 PrefabInstance:
   m_ObjectHideFlags: 0
