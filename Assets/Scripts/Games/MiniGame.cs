@@ -21,9 +21,6 @@ namespace Assets.Scripts
             {
                 print("Игра пройдена");
             }
-
-            //Удалить
-            Game.S.StartGame();
         }
     }
 }

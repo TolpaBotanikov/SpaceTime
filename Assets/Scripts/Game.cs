@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
@@ -9,11 +10,12 @@ public class Game : MonoBehaviour
     public GameObject[] games;
     public bool isMinigameEnabled = false;
     public GameObject canvas;
+    public Button fixBtn;
+    public List<GameTriger> gamePoints = new List<GameTriger>();
 
     private void Awake()
     {
         S = this;
-        isMinigameEnabled = true;
     }
     public void StartGame(GameObject game)
     {
@@ -23,7 +25,12 @@ public class Game : MonoBehaviour
 
     public void StartGame()
     {
-        Instantiate(games[0], canvas.transform);
+        Instantiate(games[Random.Range(0, games.Length)], canvas.transform);
         isMinigameEnabled = true;
+    }
+
+    public void FixButonClick()
+    {
+        StartGame();
     }
 }

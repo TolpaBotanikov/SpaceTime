@@ -61,9 +61,9 @@ public class LevelGenerator : MonoBehaviour
                     SceneManager.LoadScene("GenerationTest");
                 }
             }
-            // Удалить
-            if (!regeneration)
-                Game.S.StartGame();
+            //// Удалить
+            //if (!regeneration)
+            //    Game.S.StartGame();
         }
     }
 

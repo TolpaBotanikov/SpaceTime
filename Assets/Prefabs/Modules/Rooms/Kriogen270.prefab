@@ -189,6 +189,8 @@ MonoBehaviour:
   variants: {fileID: 9169566311617147590, guid: 3c248997ae90244408f49fba0582d71c,
     type: 3}
   joint: {fileID: 0}
+  trigers:
+  - {fileID: 1459699662353864221}
 --- !u!65 &4752196557669137915
 BoxCollider:
   m_ObjectHideFlags: 0
