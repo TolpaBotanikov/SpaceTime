@@ -103,8 +103,6 @@ public class LevelGenerator : MonoBehaviour
         colliders.Add(collider);
         joints.Remove(joint);
         joints.AddRange(module.joints.Where(j => j.direction != OppositeDirection(jointDirection)));
-        if (module is Room)
-            Game.S.gamePoints.AddRange((module as Room).trigers);
         generatedModules.Add(moduleGo);
         roomCount--;
 
