@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameTriger : MonoBehaviour
 {
     public bool broken;
+    public Light lightPoint;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag != "Player") return;

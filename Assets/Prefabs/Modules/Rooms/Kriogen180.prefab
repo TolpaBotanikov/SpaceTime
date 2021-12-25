@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   broken: 0
+  lightPoint: {fileID: 5656121147451933650}
 --- !u!1001 &40694230167008005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3311,6 +3312,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d49d5f9ac8c6b7749a634985e6e7e096, type: 3}
+--- !u!108 &5656121147451933650 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1701623083649126067, guid: d49d5f9ac8c6b7749a634985e6e7e096,
+    type: 3}
+  m_PrefabInstance: {fileID: 6477290183437864289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6480047537385929219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012622640994, guid: d49d5f9ac8c6b7749a634985e6e7e096,
